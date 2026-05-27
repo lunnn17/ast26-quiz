@@ -1,7 +1,7 @@
 author: lunnn17
 date: 2026-05-27
 question: |
-  下列何種資料最不適合進行資料壓縮？
+  下列不同的檔案類型中，何種資料最不適合進行資料壓縮？
 options:
   - text: "JEPG、Video 檔案"
     correct: true
