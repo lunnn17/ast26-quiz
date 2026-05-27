@@ -1,0 +1,18 @@
+author: lunnn17
+date: 2026-05-27
+question: |
+  下列何種資料最不適合進行資料壓縮？
+options:
+  - text: "JEPG、Video 檔案"
+    correct: true
+    explanation: |
+      JEPG、Video 本身就是已經被壓縮過的資料，對其做壓縮只是在浪費時間。
+  - text: "Kernel image 檔案"
+    explanation: |
+      它是標準「一次壓、多次解」的完美場景。實務上通常會使用極高壓縮率的演算法（如 xz / LZMA），因為系統只需要在開機時解壓縮一次，這能大幅節省映像檔的儲存與傳輸空間。
+  - text: "RocksDB 檔案"
+    explanation: |
+      RocksDB 這類基於 LSM-tree 的資料庫非常依賴壓縮來減少底層 SSD 的 I/O 寫入放大與空間浪費。
+  - text: "HTML 檔案"
+    explanation: |
+      HTML 充滿了重複的語法標籤與人類可讀的字彙，屬於冗餘度極高的資料，是適合壓縮的類型之一。
